@@ -1,0 +1,267 @@
+<html> 
+ <head> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+ </head> 
+ <body style="background-color: black"> 
+  <div style="padding-left: 10%; padding-right: 10%; padding-top: 2.5%; background-color: black; color: white"> 
+   <div style="border: 3px solid white; background-color: #545454; padding-left: 3%; padding-right: 3%; padding-top: 2.5%"> 
+    <h1 style="text-align: center" id="title">Status of Interfaces on 2021-11-09</h1> 
+    <div class="form-group"> <label for="groups">Server:</label> <select id="groups" class="form-control"> <option value="ICINTDT1">ICINTDT1</option> <option value="ICINTDT2">ICINTDT2</option> <option value="ICINTCTL">ICINTCTL</option> </select> 
+    </div> 
+    <div class="form-group"> <label for="sub_groups">Site ID:</label> <select id="sub_groups" class="form-control"> <option data-group="SHOW" value="0">-- Select --</option> <option data-group="ICINTDT1" value="476">LASINT</option><option data-group="ICINTDT1" value="132">PALINT</option><option data-group="ICINTDT1" value="580">ORGINT</option><option data-group="ICINTCTL" value="334">KANINT</option><option data-group="ICINTCTL" value="333">OMAINT</option><option data-group="ICINTDT2" value="609">CLEINT</option><option data-group="ICINTDT2" value="216">CONINT</option><option data-group="ICINTDT2" value="001">MACINT</option><option data-group="ICINTDT2" value="214">GANINT</option><option data-group="ICINTDT2" value="238">RHIINT</option></select> 
+    </div> 
+    <div id="tables"> 
+     <table machine-group="0" id="0" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody></tbody> 
+     </table> 
+     <table machine-group="476" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-success"> 
+        <td>ARPST</td> 
+        <td>AR POST</td> 
+        <td>EOFW</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="132" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-success"> 
+        <td>ENCRY</td> 
+        <td>ENCRYPTION INTE</td> 
+        <td>DEQW</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="580" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-success"> 
+        <td>ARPST</td> 
+        <td>AR POSTING INTE</td> 
+        <td>EOFW</td> 
+        <td>0</td> 
+       </tr> 
+       <tr class="bg-success"> 
+        <td>ENCRY</td> 
+        <td>ENCRYPTION INTE</td> 
+        <td>DEQW</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="334" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-success"> 
+        <td>ARPST</td> 
+        <td>AR POSTING INTE</td> 
+        <td>EOFW</td> 
+        <td>0</td> 
+       </tr> 
+       <tr class="bg-success"> 
+        <td>ENCRY</td> 
+        <td>ENCRYPTION INTE</td> 
+        <td>DEQW</td> 
+        <td>0</td> 
+       </tr> 
+       <tr class="bg-success"> 
+        <td>PTMSP</td> 
+        <td>Prov Splitter I</td> 
+        <td>DEQA</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="333" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-danger"> 
+        <td>COUNT</td> 
+        <td>OMA COUNTER</td> 
+        <td>NO</td> 
+        <td>15054</td> 
+       </tr> 
+       <tr class="bg-danger"> 
+        <td>EQFXM</td> 
+        <td>Equifax *Te</td> 
+        <td>NO</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="609" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-success"> 
+        <td>COUNT</td> 
+        <td>CLE COUNTER</td> 
+        <td>DEQW</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="216" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-success"> 
+        <td>COUNT</td> 
+        <td>HAR COUNTER</td> 
+        <td>DEQW</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="001" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-success"> 
+        <td>COUNT</td> 
+        <td>COUNTER PROGRAM</td> 
+        <td>DEQW</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="214" class="table table-dark"> 
+      <thead> 
+       <tr> 
+        <th>Interface Code</th> 
+        <th>Interface Description</th> 
+        <th>Interface Status</th> 
+        <th>Pending Transactions</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr class="bg-success"> 
+        <td>COUNT</td> 
+        <td>GAN COUNTER</td> 
+        <td>DEQW</td> 
+        <td>0</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <table machine-group="238" class="table table-dark">
+      <thead>
+       <tr>
+        <th>Interface Code</th>
+        <th>Interface Description</th>
+        <th>Interface Status</th>
+        <th>Pending Transactions</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr class="bg-success">
+        <td>COUNT</td>
+        <td>COUNTER</td>
+        <td>DEQW</td>
+        <td>0</td>
+       </tr>
+      </tbody>
+     </table>
+    </div> 
+   </div> 
+  </div> 
+  <script>
+		$(function(){
+			$('#groups').on('change', function(){
+				var val = $(this).val();
+				var sub = $('#sub_groups');
+				$('option', sub).filter(function(){
+					if (
+						 $(this).attr('data-group') === val 
+					  || $(this).attr('data-group') === 'SHOW'
+					) {
+						$(this).show();
+					} else {
+						$(this).hide();
+					}
+				});
+				$('#sub_groups').val("0").change();
+			});
+			$('#groups').trigger('change');
+			
+			$('#sub_groups').on('change', function() {
+				let machine = $(this).val();
+				let tables = $('#tables');
+				$('table', tables).filter(function() {
+					if ( $(this).attr('machine-group') === machine ) {
+						$(this).show();
+					} else {
+						$(this).hide();
+					}
+				});
+			});
+			$('#sub_groups').trigger('change');
+		});
+	</script>  
+ </body>
+</html>
