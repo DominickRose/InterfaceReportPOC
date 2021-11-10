@@ -269,9 +269,9 @@
     }
 
     const triggerNewBuild = function() {
-      const credentials = "http://user:admin"
-      const body = "@54.219.178.229:8080/jenkins/job/GenerateInterfaceReport/build?token=";
-      const apiKey = "Report";
+      const credentials = "http://"
+      const body = "54.219.178.229:8080/jenkins/job/GenerateInterfaceReport/build?token=";
+      const apiKey = "MYTOKEN";
       const url = credentials + body + apiKey;
       console.log(url);
       $.ajax({
