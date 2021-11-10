@@ -264,10 +264,6 @@
 			$('#sub_groups').trigger('change');
 		});
 
-    const checkSuccess = function() {
-      console.log("Success");
-    }
-
     const triggerNewBuild = function() {
       const body = "http://54.219.178.229:8080/jenkins/job/GenerateInterfaceReport/build?token=";
       const apiKey = "MYTOKEN";
@@ -275,8 +271,7 @@
       console.log(url);
       $.ajax({
         type: "GET",
-        url: url,
-        success: checkSuccess
+        url: url
       });
     };
 	</script>  
