@@ -5,7 +5,8 @@
  </head> 
  <body style="background-color: black"> 
   <div style="padding-left: 10%; padding-right: 10%; padding-top: 2.5%; background-color: black; color: white"> 
-   <div style="border: 3px solid white; background-color: #545454; padding-left: 3%; padding-right: 3%; padding-top: 2.5%"> 
+   <div style="border: 3px solid white; background-color: #545454; padding-left: 3%; padding-right: 3%; padding-top: 2.5%">
+    <button type="button" class="btn btn-primary float-right" onClick="triggerNewBuild()">Refresh Data</button>
     <h1 style="text-align: center" id="title">Status of Interfaces on 2021-11-09</h1> 
     <div class="form-group"> <label for="groups">Server:</label> <select id="groups" class="form-control"> <option value="ICINTDT1">ICINTDT1</option> <option value="ICINTDT2">ICINTDT2</option> <option value="ICINTCTL">ICINTCTL</option> </select> 
     </div> 
@@ -262,6 +263,19 @@
 			});
 			$('#sub_groups').trigger('change');
 		});
+
+    const checkSuccess = function() {
+      console.log("Success");
+    }
+
+    const triggerNewBuild = function() {
+      const url = "http://54.219.178.229:8080/jenkins/job/GenerateInterfaceReport/build";
+      $.ajax({
+        type: "POST",
+        url: url,
+        success: checkSuccess
+      });
+    };
 	</script>  
  </body>
 </html>
